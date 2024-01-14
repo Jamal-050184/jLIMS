@@ -1,0 +1,72 @@
+
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #417690;
+    color: white;
+  
+  }
+  
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {height: 500px}
+  
+  /* Set gray background color and 100% height */
+  .sidenav {
+    padding: 10px;
+    background-color: #f8f8f8;
+    height: 100%;
+   
+  }
+  
+  /* Set black background color, white text and some padding */
+  footer {
+    background-color: #417690;
+    color: white;
+    padding: 10px;
+  }
+  
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 10px;
+    }
+    .row.content {height:auto;} 
+  }
+
+
+
+  /* Dropdown */
+
+  .dropdown .dropbtn {
+
+    padding: 14px 16px;
+    background-color: #417690;
+
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

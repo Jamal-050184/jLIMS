@@ -1,0 +1,37 @@
+{% extends "t_app_jlims/base.html" %}
+
+{% block title %} Library {% endblock title %}
+
+{% block body %}
+
+<table class="table table-sm table-hover">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Publisher</th>
+      <th scope="col">Author</th>
+      <th scope="col">Title</th>
+      <th scope="col">PageCount</th>
+      <th scope="col">Category</th>
+      <th scope="col">ShelfLocation</th>
+      <th scope="col">PublishedDate</th>
+      <th scope="col">isInStock</th>
+      <th scope="col">DateCheckedOut</th>
+    </tr>
+    {% for x in mybooks %}
+      <tr>
+        <td>{{ x.id }}</td>
+        <td>{{ x.publisher }}</td>
+        <td>{{ x.author }}</td>
+        <td>{{ x.title }}</td>
+        <td>{{ x.pageCount }}</td>
+        <td>{{ x.category }}</td>
+        <td>{{ x.shelfLocation }}</td>
+        <td>{{ x.publishedDate }}</td>
+        <td>{{ x.isInStock }}</td>
+        <td>{{ x.dateCheckedOut }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+
+
+{% endblock body %} 
